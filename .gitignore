@@ -1,2 +1,4 @@
 Makefile
 PersonalStuff/*
+db.sqlite
+__pycache__/
