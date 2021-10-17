@@ -4,7 +4,8 @@ db = Database()
 
 
 class Game(db.Entity):
-    name = Required(str)  # Preguntar si es UNIQUE o no
+    id = PrimaryKey(int, auto=True, unsigned=True)
+    name = Required(str)
 
 
 db.bind(provider="sqlite", filename="db.sqlite", create_db=True)

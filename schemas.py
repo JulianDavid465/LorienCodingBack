@@ -10,6 +10,7 @@ class GameIN(BaseModel):
 
 
 class GameInDB(BaseModel):
+    id: int
     name: str
 
     class Config:
@@ -17,8 +18,8 @@ class GameInDB(BaseModel):
 
 
 class GameOUT(BaseModel):
+    id: int
     name: str
-    operationResult: str
 
     class Config:
         orm_mode = True
